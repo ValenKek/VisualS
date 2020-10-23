@@ -1,0 +1,10 @@
+﻿  Source.cpp
+C:\Users\valet\source\repos\Sort\Sort\Source.cpp(17,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\valet\source\repos\Sort\Sort\Source.cpp(18,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  TwoDSorting.cpp
+C:\Users\valet\source\repos\Sort\Sort\TwoDSorting.cpp(49,28): error C2110: +: невозможно добавить два указателя
+C:\Users\valet\source\repos\Sort\Sort\TwoDSorting.cpp(50,28): error C2440: =: невозможно преобразовать "int" в "int *"
+C:\Users\valet\source\repos\Sort\Sort\TwoDSorting.cpp(50,20): message : Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+C:\Users\valet\source\repos\Sort\Sort\TwoDSorting.cpp(51,28): error C2440: =: невозможно преобразовать "int" в "int *"
+C:\Users\valet\source\repos\Sort\Sort\TwoDSorting.cpp(51,20): message : Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+  Создание кода...

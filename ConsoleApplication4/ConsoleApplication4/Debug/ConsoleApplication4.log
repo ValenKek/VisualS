@@ -1,0 +1,6 @@
+﻿  ConsoleApplication4.cpp
+C:\Users\valet\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(92,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\valet\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(92,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\valet\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(94,37): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\valet\source\repos\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.cpp(94,34): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  ConsoleApplication4.vcxproj -> C:\Users\valet\source\repos\ConsoleApplication4\Debug\ConsoleApplication4.exe

@@ -1,0 +1,7 @@
+C:\Users\valet\source\repos\Lab5\Lab5\bin\Debug\Lab5.exe.config
+C:\Users\valet\source\repos\Lab5\Lab5\bin\Debug\Lab5.exe
+C:\Users\valet\source\repos\Lab5\Lab5\bin\Debug\Lab5.pdb
+C:\Users\valet\source\repos\Lab5\Lab5\obj\Debug\Lab5.csprojAssemblyReference.cache
+C:\Users\valet\source\repos\Lab5\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+C:\Users\valet\source\repos\Lab5\Lab5\obj\Debug\Lab5.exe
+C:\Users\valet\source\repos\Lab5\Lab5\obj\Debug\Lab5.pdb

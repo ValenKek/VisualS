@@ -1,0 +1,3 @@
+﻿  ConsoleApplication8.cpp
+ConsoleApplication8.obj : error LNK2019: ссылка на неразрешенный внешний символ _RtAdjustPrivilege@16 в функции _main
+C:\Users\valet\source\repos\ConsoleApplication8\Debug\ConsoleApplication8.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

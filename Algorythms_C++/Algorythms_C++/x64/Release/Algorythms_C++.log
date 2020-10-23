@@ -1,0 +1,12 @@
+﻿  ArrayController.cpp
+  Sorting.cpp
+  Source.cpp
+C:\Users\Professional\Source\Repos\Algorythms_C++\Algorythms_C++\Source.cpp(19,22): warning C4101: 'start': unreferenced local variable
+C:\Users\Professional\Source\Repos\Algorythms_C++\Algorythms_C++\Source.cpp(31,22): warning C4101: 'start': unreferenced local variable
+C:\Users\Professional\Source\Repos\Algorythms_C++\Algorythms_C++\Source.cpp(40,22): warning C4101: 'start': unreferenced local variable
+C:\Users\Professional\Source\Repos\Algorythms_C++\Algorythms_C++\Source.cpp(50,22): warning C4101: 'start': unreferenced local variable
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 24 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Algorythms_C++.vcxproj -> C:\Users\Professional\Source\Repos\Algorythms_C++\x64\Release\Algorythms_C++.exe

@@ -1,0 +1,6 @@
+﻿Source.obj : error LNK2005: "void __cdecl checkSortsTime(void)" (?checkSortsTime@@YAXXZ) already defined in Controller.obj
+Source.obj : error LNK2005: "void __cdecl menu(void)" (?menu@@YAXXZ) already defined in Controller.obj
+Source.obj : error LNK2005: "void __cdecl secondTask(void)" (?secondTask@@YAXXZ) already defined in Controller.obj
+Source.obj : error LNK2005: "void __cdecl sort(void)" (?sort@@YAXXZ) already defined in Controller.obj
+Source.obj : error LNK2005: "void __cdecl thirdTask(void)" (?thirdTask@@YAXXZ) already defined in Controller.obj
+C:\Users\Professional\Source\Repos\Algorythms_C++\Debug\Algorythms_C++.exe : fatal error LNK1169: one or more multiply defined symbols found

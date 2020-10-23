@@ -1,0 +1,7 @@
+C:\Users\valet\source\repos\SR6\SR6\bin\Debug\SR6.exe.config
+C:\Users\valet\source\repos\SR6\SR6\bin\Debug\SR6.exe
+C:\Users\valet\source\repos\SR6\SR6\bin\Debug\SR6.pdb
+C:\Users\valet\source\repos\SR6\SR6\obj\Debug\SR6.csprojAssemblyReference.cache
+C:\Users\valet\source\repos\SR6\SR6\obj\Debug\SR6.csproj.CoreCompileInputs.cache
+C:\Users\valet\source\repos\SR6\SR6\obj\Debug\SR6.exe
+C:\Users\valet\source\repos\SR6\SR6\obj\Debug\SR6.pdb
