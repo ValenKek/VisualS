@@ -1,11 +1,11 @@
 ﻿  Sod2.cpp
 C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(55,13): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
 C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(62,17): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(89,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(97,29): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(127,13): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(134,17): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(159,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(167,29): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(197,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(90,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(99,29): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(129,13): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(136,17): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(162,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(171,29): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod2\Sod2\Sod2.cpp(201,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
   Sod2.vcxproj -> C:\Users\valet\source\repos\Sod2\Debug\Sod2.exe

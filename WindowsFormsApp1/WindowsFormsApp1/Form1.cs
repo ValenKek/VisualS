@@ -60,31 +60,25 @@ namespace WindowsFormsApp1
                 Size = new Size(100, 50),
                 Location = new Point(100, 0),
                 Anchor = AnchorStyles.Left,
-                Text = "Показать информацию"
+                Text = "Информация"
             };
-            //Button findSum = new Button{ 
-            //    Size = new Size(100, 35),
-            //    Location = new Point(284,220), 
-            //    Text="Найти сумму" 
-            //};
             Button returnFromF1 = new Button()
             {
                 Size = new Size(100,25),
                 TextAlign = ContentAlignment.BottomCenter,
                 Location = new Point(70, 100),
-                Text = "Вернуться"
+                Text = "Назад"
             };
             Button plusOne = new Button()
             {
                 Size = new Size(100, 50),
                 TextAlign = ContentAlignment.BottomCenter,
                 Location = new Point(70, 125),
-                Text = "Увеличить каждое число на 1"
+                Text = "Увеличить числа на 1"
             };
             calculatingForm.Size = new Size(250, 250);
 
             inputData.Click += button1_Click;
-            //findSum.Click += button2_Click;
             returnFromF1.Click += button2_Click;
             plusOne.Click += button3_Click;
             showInfo.Click += button4_Click;
@@ -92,8 +86,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(sum); 
             this.Controls.Add(showInfo);
             this.Controls.Add(sumInfo);
-            
-            //calculatingForm.Controls.Add(findSum);
+
             calculatingForm.Controls.Add(nums);
             calculatingForm.Controls.Add(returnFromF1);
             calculatingForm.Controls.Add(plusOne);

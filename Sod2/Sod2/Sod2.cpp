@@ -4,18 +4,18 @@
 #include <windows.h>
 #include <locale.h>
 
-void exercise2_1();//1
-void exercise1_1();//2
-void exercise2_2();//3
-void exercise1_2();//4
-void exerciseV14();
+void exercise2_1();//Завдання №1
+void exercise1_1();//Завдання №2
+void exercise2_2();//Завдання №3
+void exercise1_2();//Завдання №4
+void exerciseV14();//Завдання для 14го варіанту 
 
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	int choice;
 	std::cout << "Enter the number of exercice to perform: \n";
-	std::cin >> choice;
+	std::cin >> choice;//Вибір номеру завдання
 	std::cin.ignore();
 	switch (choice) {
 	case 1: {
@@ -45,20 +45,20 @@ int main() {
 	return 0;
 }
 
-void exercise1_1() {
-	std::ifstream is("text_city_ukr_ansi.txt");
+void exercise1_1() {//Завдання №2
+	std::ifstream is("text_city_ukr_ansi.txt");//Відкриття файлу
 	if (!is.is_open()) {
 		std::cout << "Error\n";
 		return;
 	}
-	is.seekg(0, std::ios::end);
-	int length = is.tellg();
+	is.seekg(0, std::ios::end);//Пошук кінця файлу, для разрахування його розміру
+	int length = is.tellg();//Розмір файлу
 	is.seekg(0, std::ios::beg);
 
 	char* buffer = new char[length];
 	char* word = new char[length];
 	std::cin.getline(word, length);
-
+	//Розбиття тексту на лексеми та запис у масив 
 	int lenghtWord = std::cin.tellg();
 	--lenghtWord;
 	--length;
@@ -66,6 +66,7 @@ void exercise1_1() {
 	is.read(buffer, length);
 	buffer[length] = '\0';
 	is.close();
+	//Пошук слова задовільняючого умові, та вивід результату
 	for (int index1 = 0, index2, index3; buffer[index1] != 0; ++index1) {
 		for (index2 = index1, index3 = 0; word[index3] != 0 || buffer[index2] != 0; ++index2, ++index3)
 		{
@@ -82,17 +83,18 @@ void exercise1_1() {
 	delete[] buffer;
 }
 
-void exercise1_2() {
-	std::ifstream is("Shakespeare_Hamlet.txt");
+void exercise1_2() {//Завдання №4
+	std::ifstream is("Shakespeare_Hamlet.txt");//Відкриття файлу
 	int length, wordLength;
-	is.seekg(0, std::ios::end);
-	length = is.tellg();
+	is.seekg(0, std::ios::end);//Пошук кінця файлу, для разрахування його розміру
+	length = is.tellg();//Розмір файлу
 	is.seekg(std::ios::beg);
 	char* buffer = new char[length];
 	is.read(buffer, length);
 
 	char* word = new char[length];
 	std::cin.getline(word, length);
+	//Розбиття тексту на лексеми та запис у масив 
 	buffer[length] = 0;
 	wordLength = std::cin.tellg();
 	wordLength -= 2;
@@ -102,7 +104,7 @@ void exercise1_2() {
 	char* pch;
 	pch = strtok(buffer, " ,.");
 	bool checker;
-	while (pch != NULL)
+	while (pch != NULL)//Пошук слів задовільняючих умові, підрахування, та вивід результату
 	{
 		checker = true;
 		for (int index = 0; pch[index] != '\0'; ++index) {
@@ -117,20 +119,20 @@ void exercise1_2() {
 	std::cout << count;
 }
 
-void exercise2_1() {
-	std::ifstream is("text_city.txt");
+void exercise2_1() {//Завдання №1
+	std::ifstream is("text_city.txt");//Відкриття файлу
 	if (!is.is_open()) {
 		std::cout << "Error\n";
 		return;
 	}
-	is.seekg(0, std::ios::end);
-	int length = is.tellg();
+	is.seekg(0, std::ios::end);//Пошук кінця файлу, для разрахування його розміру
+	int length = is.tellg();//Розмір файлу
 	is.seekg(0, std::ios::beg);
 
 	char* buffer = new char[length];
 	char* word = new char[length];
 	std::cin.getline(word, length);
-
+	//Розбиття тексту на лексеми та запис у масив 
 	int lenghtWord = std::cin.tellg();
 	--lenghtWord;
 	--length;
@@ -138,6 +140,7 @@ void exercise2_1() {
 	is.read(buffer, length);
 	buffer[length] = 0;
 	is.close();
+	//Пошук слова задовільняючого умові, та вивід результату
 	for (int index1 = 0, index2, index3; buffer[index1] != 0; ++index1) {
 		for (index2 = index1, index3 = 0; word[index3] != 0 || buffer[index2] != 0; ++index2, ++index3)
 		{
@@ -152,17 +155,18 @@ void exercise2_1() {
 	std::cout << "Not found\n";
 	delete[] buffer, word;
 }
-void exercise2_2() {
+void exercise2_2() {//Завдання №3
 	std::ifstream is("Shakespeare_Hamlet.txt");
 	int length, wordLength;
-	is.seekg(0, std::ios::end);
-	length = is.tellg();
+	is.seekg(0, std::ios::end);//Пошук кінця файлу, для разрахування його розміру
+	length = is.tellg();//Розмір файлу
 	is.seekg(std::ios::beg);
 	char* buffer = new char[length];
 	is.read(buffer, length);
 
 	char* word = new char[length];
 	std::cin.getline(word, length);
+	//Розбиття тексту на лексеми та запис у масив 
 	buffer[length] = 0;
 	wordLength = std::cin.tellg();
 	wordLength -= 2;
@@ -174,7 +178,7 @@ void exercise2_2() {
 
 	pch = strtok(buffer, separators);
 	bool checker;
-	while (pch != NULL)
+	while (pch != NULL)//Пошук слів задовільняючих умові, підрахування, та вивід результату
 	{
 		checker = true;
 		for (int index = 0; pch[index] != '\0'; ++index) {
@@ -190,13 +194,13 @@ void exercise2_2() {
 }
 
 void exerciseV14() {
-	std::ifstream is("text.txt");
+	std::ifstream is("text.txt");//Відкриття файлу
 	int lenght;
 
-	is.seekg(0, std::ios::end);
-	lenght = is.tellg();
+	is.seekg(0, std::ios::end);//Пошук кінця файлу, для разрахування його розміру
+	lenght = is.tellg();//Розмір файлу
 	is.seekg(0, std::ios::beg);
-
+	//Розбиття тексту на лексеми та запис у масив 
 	char* arr = new char[lenght];
 	is.read(arr, lenght);
 	--lenght;
@@ -204,7 +208,7 @@ void exerciseV14() {
 	is.close();
 	int index = 0;
 
-	while (arr[index] != '\0') {
+	while (arr[index] != '\0') {//Пошук чисел та вивід іх текстових аналогів 
 		switch (arr[index])
 		{
 		case '0':
