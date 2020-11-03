@@ -1,10 +1,10 @@
 ﻿  Sod3.cpp
-C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(52,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(85,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(111,23): warning C4129: : неизвестная escape-последовательность
-C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(111,23): warning C4838: Преобразование из "int" в "char" требует сужающего преобразования.
-C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(111,34): warning C4305: инициализация: усечение из "int" в "char"
-C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(111,23): warning C4309: инициализация: усечение константного значения
-C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(140,11): warning C4244: инициализация: преобразование "std::streamoff" в "long", возможна потеря данных
-C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(157,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(51,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(84,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(110,23): warning C4129: : неизвестная escape-последовательность
+C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(110,23): warning C4838: Преобразование из "int" в "char" требует сужающего преобразования.
+C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(110,34): warning C4305: инициализация: усечение из "int" в "char"
+C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(110,23): warning C4309: инициализация: усечение константного значения
+C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(139,11): warning C4244: инициализация: преобразование "std::streamoff" в "long", возможна потеря данных
+C:\Users\valet\source\repos\Sod3\Sod3\Sod3.cpp(156,19): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
   Sod3.vcxproj -> C:\Users\valet\source\repos\Sod3\Debug\Sod3.exe

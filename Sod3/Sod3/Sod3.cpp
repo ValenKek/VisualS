@@ -8,7 +8,6 @@ void exercise3_1();//Завдання №1
 void exercise1_1();//Завдання №2
 void exercise3_2();//Завдання №3
 void exercise1_2();//Завдання №4
-void exerciseV14();//Завдання для 14го варіанту
 
 int main() {
 	SetConsoleCP(1251);
