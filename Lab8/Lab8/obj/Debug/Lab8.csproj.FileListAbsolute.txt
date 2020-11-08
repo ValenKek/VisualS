@@ -1,0 +1,7 @@
+C:\Users\valet\source\repos\Lab8\Lab8\bin\Debug\Lab8.exe.config
+C:\Users\valet\source\repos\Lab8\Lab8\bin\Debug\Lab8.exe
+C:\Users\valet\source\repos\Lab8\Lab8\bin\Debug\Lab8.pdb
+C:\Users\valet\source\repos\Lab8\Lab8\obj\Debug\Lab8.csprojAssemblyReference.cache
+C:\Users\valet\source\repos\Lab8\Lab8\obj\Debug\Lab8.csproj.CoreCompileInputs.cache
+C:\Users\valet\source\repos\Lab8\Lab8\obj\Debug\Lab8.exe
+C:\Users\valet\source\repos\Lab8\Lab8\obj\Debug\Lab8.pdb
