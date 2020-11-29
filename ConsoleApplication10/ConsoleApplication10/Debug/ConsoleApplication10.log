@@ -1,9 +1,0 @@
-﻿  ConsoleApplication10.cpp
-C:\Users\valet\source\repos\ConsoleApplication10\ConsoleApplication10\ConsoleApplication10.cpp(17,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-C:\Users\valet\source\repos\ConsoleApplication10\ConsoleApplication10\ConsoleApplication10.cpp(24,11): warning C4566: символ, представленный универсальным именем символа "\u2261", невозможно представить в текущей кодовой странице (1251)
-C:\Users\valet\source\repos\ConsoleApplication10\ConsoleApplication10\ConsoleApplication10.cpp(37,22): warning C4244: *=: преобразование "double" в "long", возможна потеря данных
-C:\Users\valet\source\repos\ConsoleApplication10\ConsoleApplication10\ConsoleApplication10.cpp(57,26): warning C4244: инициализация: преобразование "double" в "__int64", возможна потеря данных
-C:\Users\valet\source\repos\ConsoleApplication10\ConsoleApplication10\ConsoleApplication10.cpp(59,26): warning C4244: инициализация: преобразование "double" в "__int64", возможна потеря данных
-C:\Users\valet\source\repos\ConsoleApplication10\ConsoleApplication10\ConsoleApplication10.cpp(67,23): warning C4244: инициализация: преобразование "double" в "__int64", возможна потеря данных
-C:\Users\valet\source\repos\ConsoleApplication10\ConsoleApplication10\ConsoleApplication10.cpp(23,12): warning C4101: x: неиспользованная локальная переменная
-  ConsoleApplication10.vcxproj -> C:\Users\valet\source\repos\ConsoleApplication10\Debug\ConsoleApplication10.exe

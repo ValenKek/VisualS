@@ -1,6 +1,0 @@
-﻿  ConsoleApplication7.cpp
-C:\Users\valet\source\repos\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(86,27): warning C4838: Преобразование из "__int64" в "int" требует сужающего преобразования.
-C:\Users\valet\source\repos\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(86,78): warning C4305: инициализация: усечение из "__int64" в "int"
-C:\Users\valet\source\repos\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(86,27): warning C4309: инициализация: усечение константного значения
-C:\Users\valet\source\repos\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(90,30): error C2440: инициализация: невозможно преобразовать "int" в "Сontinent"
-C:\Users\valet\source\repos\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.cpp(90,30): message : Конструктор для class "Сontinent" объявлен как "explicit"

@@ -7,36 +7,49 @@ using System.Threading.Tasks;
 
 namespace Lab8
 {
+
     class Program
     {
-        public interface Device
+
+        public static void Method(IDevice device)
+        {
+            device.Show();
+        }
+
+        public interface IDevice
         {
             void Show();
+            int Voltage { get; set; }
+            string ModelName { get; set; }
+            int ProductionQuantity { get; set; }
         }
-        class TV : Device
+        class TV : IDevice
         {
-            public Int32 Voltage { get; private set; }
-            public String ModelName { get; private set; }
-            public String ProductionQuantity { get; private set; }
-
+            public int Voltage { get; set; }
+            public string ModelName { get; set; }
+            public int ProductionQuantity { get; set; }
             public void Show()
             {
                 Console.WriteLine($"Company -> {ModelName}\nNum of pages -> {Voltage}");
             }
         }
-        class Phone : Device, IComparable<Phone>
+        class Phone : IDevice, IComparable<Phone>
         {
-            public Phone(Int32 voltage, String company, Int32 productionQuantity)
+            public Phone(int voltage, string company, int productionQuantity)
             {
                 Voltage = voltage;
                 Company = company;
                 ProductionQuantity = productionQuantity;
-            }
-            public Int32 Voltage { get; private set; }
-            public String Company { get; private set; }
-            public Int32 ProductionQuantity { get; private set; }
 
-            public Int32 CompareTo(Phone other)
+            }
+
+            public string ModelName { get; set; }
+            public int Voltage { get; set; }
+            public string Company { get; set; }
+            public int ProductionQuantity { get; set; }
+
+
+            public int CompareTo(Phone other)
             {
                 throw new NotImplementedException();
             }
@@ -60,7 +73,7 @@ namespace Lab8
 
             private class SortByVoltageHelper : IComparer
             {
-                Int32 IComparer.Compare(object x, object y)
+                int IComparer.Compare(object x, object y)
                 {
                     Phone b1 = (Phone)x;
                     Phone b2 = (Phone)y;
@@ -74,17 +87,17 @@ namespace Lab8
             }
             private class SortByCompanyHelper : IComparer
             {
-                Int32 IComparer.Compare(object x, object y)
+                int IComparer.Compare(object x, object y)
                 {
                     Phone b1 = (Phone)x;
                     Phone b2 = (Phone)y;
 
-                    return String.Compare(b1.Company, b2.Company);
+                    return string.Compare(b1.Company, b2.Company);
                 }
             }
             private class SortByProductionQuantityHelper : IComparer
             {
-                Int32 IComparer.Compare(object x, object y)
+                int IComparer.Compare(object x, object y)
                 {
                     Phone b1 = (Phone)x;
                     Phone b2 = (Phone)y;
@@ -97,113 +110,59 @@ namespace Lab8
                 }
             }
         }
-        class Depot : IEnumerable
+
+        public class PartOfTheWorld
         {
-            private Train[] _trains;
-            public Depot(Train[] trains)
+            public string PartOfTheWorldName { get; set; }
+            public Country[] CountryItThePartOfTheWorld;
+            public PartOfTheWorld(string name, Country[] CountryItThePartOfTheWorld)
             {
-                Int32 length = trains.Length;
-                _trains = new Train[length];
-                for (int index = 0; index < length; ++index)
+                PartOfTheWorldName = name;
+                this.CountryItThePartOfTheWorld = CountryItThePartOfTheWorld;
+            }
+            public void Show()
+            {
+                foreach (Country item in CountryItThePartOfTheWorld)
                 {
-                    _trains[index] = trains[index];
-                }
-            }
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                return (IEnumerator)GetEnumerator();
-            }
-            public DepotEnum GetEnumerator()
-            {
-                return new DepotEnum(_trains);
-            }
-        }
-        public class DepotEnum : IEnumerator
-        {
-            public Train[] _trains;
-
-            // Enumerators are positioned before the first element
-            // until the first MoveNext() call.
-            int position = -1;
-
-            public DepotEnum(Train[] list)
-            {
-                _trains = list;
-            }
-
-            public bool MoveNext()
-            {
-                position++;
-                return (position < _trains.Length);
-            }
-
-            public void Reset()
-            {
-                position = -1;
-            }
-
-            object IEnumerator.Current
-            {
-                get
-                {
-                    return Current;
-                }
-            }
-
-            public Train Current
-            {
-                get
-                {
-                    try
-                    {
-                        return _trains[position];
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        throw new InvalidOperationException();
-                    }
+                    item.Show();
                 }
             }
         }
-        public class Train
+        public class Country
         {
-            public String Type { get; private set; }
-            public Int32 Volume { get; private set; }
-            public Int32 Year { get; private set; }
+            public string Name { get;  set; }
+            public int Population { get;  set; }
+            public int Area { get;  set; }
 
-            public Train(String type, Int32 volume, Int32 year)
+            public Country(string name, int population, int area)
             {
-                Type = type;
-                Volume = volume;
-                Year = year;
+                Name = name;
+                Population = population;
+                Area = area;
+            }
+            public void Show()
+            {
+                Console.WriteLine(Name +" " +Population + " "+ Area+"\n");
             }
 
-
         }
-        static void Main(String[] args)
+        static void Main(string[] args)
         {
-            Phone[] Phones = { new Phone(2, "b", 3), new Phone(4, "z", 1), new Phone(1, "a", 1) };
+            Phone[] Phones = { new Phone(2, "ads", 3), new Phone(4, "dsa", 1), new Phone(1, "bvc", 1) };
+
             Array.Sort(Phones, Phone.SortByCompany());
+
             Console.WriteLine("Sort by Company name");
             foreach (var item in Phones)
             {
                 Console.WriteLine(item.Company);
             }
-            Train[] trains = { new Train("first", 1, 1), new Train("second", 2, 2) };
-            Depot depot = new Depot(trains);
-            depot.GetEnumerator().MoveNext();
 
-            foreach (var item in depot)
-            {
-                Console.WriteLine(item.GetType());
-            }
-            Console.ReadKey();
-        }
+            Country[] countrys = { new Country("CountryName1", 123456, 7891), new Country("CountryName2", 123456321, 432456) };
 
-        public static void Method(Device printedEdition)
-        {
-            printedEdition.Show();
+            PartOfTheWorld potw=new PartOfTheWorld ( "Africa", countrys);
+            potw.Show();
+
         }
     }
-
 }

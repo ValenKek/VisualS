@@ -1,5 +1,0 @@
-﻿  ConsoleApplication9.cpp
-C:\Users\valet\source\repos\ConsoleApplication9\ConsoleApplication9\ConsoleApplication9.cpp(10,5): error C2789: "Dot::PI": требуется инициализация объекта типа класса, квалифицированного как const
-C:\Users\valet\source\repos\ConsoleApplication9\ConsoleApplication9\ConsoleApplication9.cpp(3): message : см. объявление "Dot::PI"
-C:\Users\valet\source\repos\ConsoleApplication9\ConsoleApplication9\ConsoleApplication9.cpp(13,11): error C2789: "Dot::PI": требуется инициализация объекта типа класса, квалифицированного как const
-C:\Users\valet\source\repos\ConsoleApplication9\ConsoleApplication9\ConsoleApplication9.cpp(3): message : см. объявление "Dot::PI"

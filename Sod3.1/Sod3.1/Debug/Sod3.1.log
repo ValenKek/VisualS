@@ -1,0 +1,9 @@
+﻿  Sod3.1.cpp
+C:\Users\valet\source\repos\Sod3.1\Sod3.1\Sod3.1.cpp(69,13): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod3.1\Sod3.1\Sod3.1.cpp(112,13): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod3.1\Sod3.1\Sod3.1.cpp(165,13): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod3.1\Sod3.1\Sod3.1.cpp(215,13): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\valet\source\repos\Sod3.1\Sod3.1\Sod3.1.cpp(203,6): warning C4101: newNum: неиспользованная локальная переменная
+C:\Users\valet\source\repos\Sod3.1\Sod3.1\Sod3.1.cpp(218,6): warning C4101: tmp: неиспользованная локальная переменная
+C:\Users\valet\source\repos\Sod3.1\Sod3.1\Sod3.1.cpp(205,6): warning C4101: numIndex2: неиспользованная локальная переменная
+  Sod3.1.vcxproj -> C:\Users\valet\source\repos\Sod3.1\Debug\Sod3.1.exe
